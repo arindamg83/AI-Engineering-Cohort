@@ -1,0 +1,147 @@
+2024-02-26 22:08:32,676 INFO    MainThread:1888 [wandb_setup.py:_flush():76] Current SDK version is 0.16.3
+2024-02-26 22:08:32,676 INFO    MainThread:1888 [wandb_setup.py:_flush():76] Configure stats pid to 1888
+2024-02-26 22:08:32,677 INFO    MainThread:1888 [wandb_setup.py:_flush():76] Loading settings from /Users/arindam/.config/wandb/settings
+2024-02-26 22:08:32,677 INFO    MainThread:1888 [wandb_setup.py:_flush():76] Loading settings from /Users/arindam/Desktop/AI-Makerspace-Class/AI-Engineering/Week 2/Day 1/wandb/settings
+2024-02-26 22:08:32,677 INFO    MainThread:1888 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'api_key': '***REDACTED***', 'notebook_name': 'Python RAQA Example.ipynb'}
+2024-02-26 22:08:32,677 INFO    MainThread:1888 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-02-26 22:08:32,677 INFO    MainThread:1888 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-02-26 22:08:32,678 INFO    MainThread:1888 [wandb_init.py:_log_setup():526] Logging user logs to /Users/arindam/Desktop/AI-Makerspace-Class/AI-Engineering/Week 2/Day 1/wandb/run-20240226_220832-wfaxf993/logs/debug.log
+2024-02-26 22:08:32,678 INFO    MainThread:1888 [wandb_init.py:_log_setup():527] Logging internal logs to /Users/arindam/Desktop/AI-Makerspace-Class/AI-Engineering/Week 2/Day 1/wandb/run-20240226_220832-wfaxf993/logs/debug-internal.log
+2024-02-26 22:08:32,678 INFO    MainThread:1888 [wandb_init.py:init():566] calling init triggers
+2024-02-26 22:08:32,678 INFO    MainThread:1888 [wandb_init.py:init():573] wandb.init called with sweep_config: {}
+config: {}
+2024-02-26 22:08:32,679 INFO    MainThread:1888 [wandb_init.py:init():616] starting backend
+2024-02-26 22:08:32,679 INFO    MainThread:1888 [wandb_init.py:init():620] setting up manager
+2024-02-26 22:08:32,682 INFO    MainThread:1888 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2024-02-26 22:08:32,683 INFO    MainThread:1888 [wandb_init.py:init():628] backend started and connected
+2024-02-26 22:08:32,697 INFO    MainThread:1888 [wandb_run.py:_label_probe_notebook():1295] probe notebook
+2024-02-26 22:08:32,698 INFO    MainThread:1888 [wandb_run.py:_label_probe_notebook():1305] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-02-26 22:08:32,698 INFO    MainThread:1888 [wandb_init.py:init():720] updated telemetry
+2024-02-26 22:08:32,722 INFO    MainThread:1888 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2024-02-26 22:10:03,059 ERROR   MainThread:1888 [wandb_init.py:init():779] encountered error: Run initialization has timed out after 90.0 sec. 
+Please refer to the documentation for additional information: https://docs.wandb.ai/guides/track/tracking-faq#initstarterror-error-communicating-with-wandb-process-
+2024-02-26 22:10:03,152 ERROR   MainThread:1888 [wandb_init.py:init():1194] Run initialization has timed out after 90.0 sec. 
+Please refer to the documentation for additional information: https://docs.wandb.ai/guides/track/tracking-faq#initstarterror-error-communicating-with-wandb-process-
+Traceback (most recent call last):
+  File "/Users/arindam/anaconda3/envs/llmops-course/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 1176, in init
+    run = wi.init()
+          ^^^^^^^^^
+  File "/Users/arindam/anaconda3/envs/llmops-course/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 785, in init
+    raise error
+wandb.errors.CommError: Run initialization has timed out after 90.0 sec. 
+Please refer to the documentation for additional information: https://docs.wandb.ai/guides/track/tracking-faq#initstarterror-error-communicating-with-wandb-process-
+2024-02-26 22:13:43,637 INFO    MainThread:1888 [wandb_setup.py:_flush():76] Current SDK version is 0.16.3
+2024-02-26 22:13:43,638 INFO    MainThread:1888 [wandb_setup.py:_flush():76] Configure stats pid to 1888
+2024-02-26 22:13:43,638 INFO    MainThread:1888 [wandb_setup.py:_flush():76] Loading settings from /Users/arindam/.config/wandb/settings
+2024-02-26 22:13:43,638 INFO    MainThread:1888 [wandb_setup.py:_flush():76] Loading settings from /Users/arindam/Desktop/AI-Makerspace-Class/AI-Engineering/Week 2/Day 1/wandb/settings
+2024-02-26 22:13:43,638 INFO    MainThread:1888 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'api_key': '***REDACTED***', 'notebook_name': 'Python RAQA Example.ipynb'}
+2024-02-26 22:13:43,639 INFO    MainThread:1888 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-02-26 22:13:43,639 INFO    MainThread:1888 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-02-26 22:13:43,639 INFO    MainThread:1888 [wandb_init.py:_log_setup():526] Logging user logs to /Users/arindam/Desktop/AI-Makerspace-Class/AI-Engineering/Week 2/Day 1/wandb/run-20240226_221343-b866kbfn/logs/debug.log
+2024-02-26 22:13:43,639 INFO    MainThread:1888 [wandb_init.py:_log_setup():527] Logging internal logs to /Users/arindam/Desktop/AI-Makerspace-Class/AI-Engineering/Week 2/Day 1/wandb/run-20240226_221343-b866kbfn/logs/debug-internal.log
+2024-02-26 22:13:43,640 INFO    MainThread:1888 [wandb_init.py:init():566] calling init triggers
+2024-02-26 22:13:43,640 INFO    MainThread:1888 [wandb_init.py:init():573] wandb.init called with sweep_config: {}
+config: {}
+2024-02-26 22:13:43,640 INFO    MainThread:1888 [wandb_init.py:init():616] starting backend
+2024-02-26 22:13:43,641 INFO    MainThread:1888 [wandb_init.py:init():620] setting up manager
+2024-02-26 22:13:43,643 INFO    MainThread:1888 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2024-02-26 22:13:43,645 INFO    MainThread:1888 [wandb_init.py:init():628] backend started and connected
+2024-02-26 22:13:43,661 INFO    MainThread:1888 [wandb_run.py:_label_probe_notebook():1295] probe notebook
+2024-02-26 22:13:43,661 INFO    MainThread:1888 [wandb_run.py:_label_probe_notebook():1305] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-02-26 22:13:43,661 INFO    MainThread:1888 [wandb_init.py:init():720] updated telemetry
+2024-02-26 22:13:43,684 INFO    MainThread:1888 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2024-02-26 22:15:14,035 ERROR   MainThread:1888 [wandb_init.py:init():779] encountered error: Run initialization has timed out after 90.0 sec. 
+Please refer to the documentation for additional information: https://docs.wandb.ai/guides/track/tracking-faq#initstarterror-error-communicating-with-wandb-process-
+2024-02-26 22:15:14,102 ERROR   MainThread:1888 [wandb_init.py:init():1194] Run initialization has timed out after 90.0 sec. 
+Please refer to the documentation for additional information: https://docs.wandb.ai/guides/track/tracking-faq#initstarterror-error-communicating-with-wandb-process-
+Traceback (most recent call last):
+  File "/Users/arindam/anaconda3/envs/llmops-course/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 1176, in init
+    run = wi.init()
+          ^^^^^^^^^
+  File "/Users/arindam/anaconda3/envs/llmops-course/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 785, in init
+    raise error
+wandb.errors.CommError: Run initialization has timed out after 90.0 sec. 
+Please refer to the documentation for additional information: https://docs.wandb.ai/guides/track/tracking-faq#initstarterror-error-communicating-with-wandb-process-
+2024-02-26 22:21:51,454 INFO    MainThread:1888 [wandb_setup.py:_flush():76] Current SDK version is 0.16.3
+2024-02-26 22:21:51,455 INFO    MainThread:1888 [wandb_setup.py:_flush():76] Configure stats pid to 1888
+2024-02-26 22:21:51,455 INFO    MainThread:1888 [wandb_setup.py:_flush():76] Loading settings from /Users/arindam/.config/wandb/settings
+2024-02-26 22:21:51,455 INFO    MainThread:1888 [wandb_setup.py:_flush():76] Loading settings from /Users/arindam/Desktop/AI-Makerspace-Class/AI-Engineering/Week 2/Day 1/wandb/settings
+2024-02-26 22:21:51,456 INFO    MainThread:1888 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'api_key': '***REDACTED***', 'notebook_name': 'Python RAQA Example.ipynb'}
+2024-02-26 22:21:51,456 INFO    MainThread:1888 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-02-26 22:21:51,456 INFO    MainThread:1888 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-02-26 22:21:51,456 INFO    MainThread:1888 [wandb_init.py:_log_setup():526] Logging user logs to /Users/arindam/Desktop/AI-Makerspace-Class/AI-Engineering/Week 2/Day 1/wandb/run-20240226_222151-99r887re/logs/debug.log
+2024-02-26 22:21:51,457 INFO    MainThread:1888 [wandb_init.py:_log_setup():527] Logging internal logs to /Users/arindam/Desktop/AI-Makerspace-Class/AI-Engineering/Week 2/Day 1/wandb/run-20240226_222151-99r887re/logs/debug-internal.log
+2024-02-26 22:21:51,457 INFO    MainThread:1888 [wandb_init.py:init():566] calling init triggers
+2024-02-26 22:21:51,458 INFO    MainThread:1888 [wandb_init.py:init():573] wandb.init called with sweep_config: {}
+config: {}
+2024-02-26 22:21:51,458 INFO    MainThread:1888 [wandb_init.py:init():616] starting backend
+2024-02-26 22:21:51,458 INFO    MainThread:1888 [wandb_init.py:init():620] setting up manager
+2024-02-26 22:21:51,461 INFO    MainThread:1888 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2024-02-26 22:21:51,463 INFO    MainThread:1888 [wandb_init.py:init():628] backend started and connected
+2024-02-26 22:21:51,479 INFO    MainThread:1888 [wandb_run.py:_label_probe_notebook():1295] probe notebook
+2024-02-26 22:21:51,480 INFO    MainThread:1888 [wandb_run.py:_label_probe_notebook():1305] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-02-26 22:21:51,480 INFO    MainThread:1888 [wandb_init.py:init():720] updated telemetry
+2024-02-26 22:21:51,551 INFO    MainThread:1888 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2024-02-26 22:21:51,831 WARNING MsgRouterThr:1888 [router.py:message_loop():77] message_loop has been closed
+2024-02-26 22:21:51,861 INFO    MainThread:1888 [wandb_run.py:_on_init():2262] communicating current version
+2024-02-26 22:22:04,506 WARNING MainThread:1888 [wandb_init.py:init():1198] interrupted
+Traceback (most recent call last):
+  File "/Users/arindam/anaconda3/envs/llmops-course/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 1176, in init
+    run = wi.init()
+          ^^^^^^^^^
+  File "/Users/arindam/anaconda3/envs/llmops-course/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 802, in init
+    run._on_init()
+  File "/Users/arindam/anaconda3/envs/llmops-course/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 2266, in _on_init
+    version_result = version_handle.wait(timeout=30)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/arindam/anaconda3/envs/llmops-course/lib/python3.11/site-packages/wandb/sdk/lib/mailbox.py", line 283, in wait
+    found, abandoned = self._slot._get_and_clear(timeout=wait_timeout)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/arindam/anaconda3/envs/llmops-course/lib/python3.11/site-packages/wandb/sdk/lib/mailbox.py", line 130, in _get_and_clear
+    if self._wait(timeout=timeout):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/arindam/anaconda3/envs/llmops-course/lib/python3.11/site-packages/wandb/sdk/lib/mailbox.py", line 126, in _wait
+    return self._event.wait(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/arindam/anaconda3/envs/llmops-course/lib/python3.11/threading.py", line 629, in wait
+    signaled = self._cond.wait(timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/arindam/anaconda3/envs/llmops-course/lib/python3.11/threading.py", line 331, in wait
+    gotit = waiter.acquire(True, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+2024-02-26 22:22:10,391 INFO    MainThread:1888 [wandb_setup.py:_flush():76] Current SDK version is 0.16.3
+2024-02-26 22:22:10,391 INFO    MainThread:1888 [wandb_setup.py:_flush():76] Configure stats pid to 1888
+2024-02-26 22:22:10,392 INFO    MainThread:1888 [wandb_setup.py:_flush():76] Loading settings from /Users/arindam/.config/wandb/settings
+2024-02-26 22:22:10,392 INFO    MainThread:1888 [wandb_setup.py:_flush():76] Loading settings from /Users/arindam/Desktop/AI-Makerspace-Class/AI-Engineering/Week 2/Day 1/wandb/settings
+2024-02-26 22:22:10,392 INFO    MainThread:1888 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'api_key': '***REDACTED***', 'notebook_name': 'Python RAQA Example.ipynb'}
+2024-02-26 22:22:10,392 INFO    MainThread:1888 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-02-26 22:22:10,393 INFO    MainThread:1888 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-02-26 22:22:10,393 INFO    MainThread:1888 [wandb_init.py:_log_setup():526] Logging user logs to /Users/arindam/Desktop/AI-Makerspace-Class/AI-Engineering/Week 2/Day 1/wandb/run-20240226_222210-y5a4ks6x/logs/debug.log
+2024-02-26 22:22:10,394 INFO    MainThread:1888 [wandb_init.py:_log_setup():527] Logging internal logs to /Users/arindam/Desktop/AI-Makerspace-Class/AI-Engineering/Week 2/Day 1/wandb/run-20240226_222210-y5a4ks6x/logs/debug-internal.log
+2024-02-26 22:22:10,394 INFO    MainThread:1888 [wandb_init.py:init():566] calling init triggers
+2024-02-26 22:22:10,394 INFO    MainThread:1888 [wandb_init.py:init():573] wandb.init called with sweep_config: {}
+config: {}
+2024-02-26 22:22:10,395 INFO    MainThread:1888 [wandb_init.py:init():616] starting backend
+2024-02-26 22:22:10,395 INFO    MainThread:1888 [wandb_init.py:init():620] setting up manager
+2024-02-26 22:22:10,398 INFO    MainThread:1888 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2024-02-26 22:22:10,399 INFO    MainThread:1888 [wandb_init.py:init():628] backend started and connected
+2024-02-26 22:22:10,414 INFO    MainThread:1888 [wandb_run.py:_label_probe_notebook():1295] probe notebook
+2024-02-26 22:22:10,415 INFO    MainThread:1888 [wandb_run.py:_label_probe_notebook():1305] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-02-26 22:22:10,415 INFO    MainThread:1888 [wandb_init.py:init():720] updated telemetry
+2024-02-26 22:22:10,440 INFO    MainThread:1888 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2024-02-26 22:22:10,753 INFO    MainThread:1888 [wandb_run.py:_on_init():2262] communicating current version
+2024-02-26 22:22:10,910 WARNING MsgRouterThr:1888 [router.py:message_loop():77] message_loop has been closed
+2024-02-26 22:22:10,910 WARNING MsgRouterThr:1888 [router.py:message_loop():77] message_loop has been closed
+2024-02-26 22:22:10,910 WARNING MsgRouterThr:1888 [router.py:message_loop():77] message_loop has been closed
+2024-02-26 22:22:40,829 INFO    MainThread:1888 [wandb_init.py:init():804] starting run threads in backend
+2024-02-26 22:23:10,942 INFO    MainThread:1888 [wandb_run.py:_console_start():2241] atexit reg
+2024-02-26 22:23:10,943 INFO    MainThread:1888 [wandb_run.py:_redirect():2096] redirect: wrap_raw
+2024-02-26 22:23:10,944 INFO    MainThread:1888 [wandb_run.py:_redirect():2161] Wrapping output streams.
+2024-02-26 22:23:10,945 INFO    MainThread:1888 [wandb_run.py:_redirect():2186] Redirects installed.
+2024-02-26 22:23:10,945 WARNING MsgRouterThr:1888 [router.py:message_loop():77] message_loop has been closed
+2024-02-26 22:23:10,946 INFO    MainThread:1888 [wandb_init.py:init():847] run started, returning control to user process
+2024-02-26 22:24:01,983 INFO    MainThread:1888 [wandb_run.py:_finish():1970] finishing run arindam-ganguly83/Visibility Example/y5a4ks6x
+2024-02-26 22:24:01,983 INFO    MainThread:1888 [wandb_run.py:_atexit_cleanup():2210] got exitcode: 0
+2024-02-26 22:24:01,985 INFO    MainThread:1888 [wandb_run.py:_restore():2193] restore
+2024-02-26 22:24:01,987 INFO    MainThread:1888 [wandb_run.py:_restore():2199] restore done

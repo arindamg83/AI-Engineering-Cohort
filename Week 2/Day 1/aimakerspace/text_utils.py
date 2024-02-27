@@ -1,5 +1,6 @@
 import os
 from typing import List
+from PyPDF2 import PdfReader
 
 
 class TextFileLoader:
@@ -11,25 +12,36 @@ class TextFileLoader:
     def load(self):
         if os.path.isdir(self.path):
             self.load_directory()
-        elif os.path.isfile(self.path) and self.path.endswith(".txt"):
-            self.load_file()
+        elif os.path.isfile(self.path):
+            if self.path.endswith(".txt"):
+                self.load_text_file()
+            elif self.path.endswith(".pdf"):  # Added condition for PDF files
+                self.load_pdf_file()          # Added method to load PDF files
+            else:
+                raise ValueError("Provided file format is not supported.")
         else:
-            raise ValueError(
-                "Provided path is neither a valid directory nor a .txt file."
-            )
+            raise ValueError("Provided path is neither a valid directory nor a file.")
 
-    def load_file(self):
+    def load_text_file(self):
         with open(self.path, "r", encoding=self.encoding) as f:
             self.documents.append(f.read())
+
+    def load_pdf_file(self):
+        with open(self.path, "rb") as f:
+            reader = PdfReader(f)
+            pagelen = len(reader.pages)
+            for page_num in range(pagelen):
+                page = reader.pages[page_num]
+                self.documents.append(page.extract_text())
 
     def load_directory(self):
         for root, _, files in os.walk(self.path):
             for file in files:
+                file_path = os.path.join(root, file)
                 if file.endswith(".txt"):
-                    with open(
-                        os.path.join(root, file), "r", encoding=self.encoding
-                    ) as f:
-                        self.documents.append(f.read())
+                    self.load_text_file(file_path)
+                elif file.endswith(".pdf"):  # Added condition for PDF files
+                    self.load_pdf_file(file_path)  # Added method to load PDF files
 
     def load_documents(self):
         self.load()
@@ -63,7 +75,7 @@ class CharacterTextSplitter:
 
 
 if __name__ == "__main__":
-    loader = TextFileLoader("data/KingLear.txt")
+    loader = TextFileLoader("data/KingLear.pdf")
     loader.load()
     splitter = CharacterTextSplitter()
     chunks = splitter.split_texts(loader.documents)
