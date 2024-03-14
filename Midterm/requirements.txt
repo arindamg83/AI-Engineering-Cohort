@@ -1,0 +1,6 @@
+chainlit==1.0.401
+langchain==0.1.12
+langchain_community==0.0.28
+langchain_openai==0.0.8
+python-dotenv==1.0.1
+tiktoken==0.6.0

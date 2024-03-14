@@ -1,0 +1,8 @@
+a full software stack. This has enabled us to architect data center-scale computing platforms that can interconnect thousands of compute nodes with high-
+performance networking. While historically the server was the unit of computing, as AI and HPC workloads have become extremely large spanning thousands of
+compute nodes, the data center has become the new unit of computing, with networking as an integral part.
+Our end customers include the world’s leading public cloud and consumer internet companies, thousands of enterprises and startups, and public sector entities.
+We work with industry leaders to help build or transform their applications and data center infrastructure. Our direct customers include original equipment
+manufacturers, or OEMs, original device manufacturers, or ODMs, system integrators and distributors which we partner with to help bring our products to
+market. We also have partnerships in automotive, healthcare, financial services, manufacturing, and retail among others, to accelerate the adoption of AI.
+5
